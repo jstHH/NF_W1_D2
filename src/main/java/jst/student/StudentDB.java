@@ -3,6 +3,7 @@ package jst.student;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Map;
+import java.util.Set;
 
 public class StudentDB {
     Map<String, Student> students;
@@ -17,7 +18,11 @@ public class StudentDB {
 
     public Student randomStudent() {
         int index = (int) ((double) students.size() * Math.random());
-        return students.get(index);
+        Set<String> helperSet = students.keySet();
+        ArrayList<String> helperArrayList = new ArrayList<>(helperSet);
+        String randomKey = helperArrayList.get(index);
+
+        return students.get(randomKey);
     }
 
     public void addStudent(Student newStudent) {
