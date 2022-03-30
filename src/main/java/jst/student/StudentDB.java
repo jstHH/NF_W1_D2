@@ -2,15 +2,16 @@ package jst.student;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Map;
 
 public class StudentDB {
-    ArrayList<Student> students;
+    Map<String, Student> students;
 
-    public StudentDB(ArrayList<Student> students) {
+    public StudentDB(Map<String, Student> students) {
         this.students = students;
     }
 
-    public ArrayList<Student> getAllStudents() {
+    public Map<String, Student> getAllStudents() {
         return students;
     }
 
@@ -20,24 +21,14 @@ public class StudentDB {
     }
 
     public void addStudent(Student newStudent) {
-        students.add(newStudent);
+        students.put(newStudent.getName(), newStudent);
     }
 
     public void removeStudentByName (String name) {
-        boolean treffer = false;
-        int index = -1;
-        for (int i = 0; i<= students.size() - 1; i++) {
-            if (students.get(i).getName().equals(name)) {
-                index = i;
-                treffer = true;
-            }
-        }
-        if (treffer && index != -1) {
-            students.remove(index);
-        }
+        students.remove(name);
     }
 
-    public ArrayList<Student> getStudents() {
+    public Map<String, Student> getStudents() {
         return students;
     }
 

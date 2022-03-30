@@ -5,24 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43bf11f9-a980-4445-96e5-4a0e441a3353" name="Changes" comment="Import Student classes">
-      <change afterPath="$PROJECT_DIR$/src/main/java/jst/student/BasicStudent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jst/student/BiologyStudent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jst/student/Citizen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/jst/student/ComputerScienceStudent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/jst/student/BasicStudentDBTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/jst/student/ComputerScienceStudentTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jst/student/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jst/student/Start.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jst/student/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jst/student/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jst/student/StudentDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jst/student/StudentDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/jst/student/StudentDBTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/jst/student/StudentDBTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jst/student/Start.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jst/student/Start.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jst/student/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jst/student/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/jst/student/BasicStudentDBTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/jst/student/BasicStudentDBTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/jst/student/StudentDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jst/student/StudentDB.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jst/student/StartTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/jst/student/StudentDBTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/jst/student/StudentDBTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +24,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
@@ -74,7 +65,7 @@
       <recent name="jst.student" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BasicStudentDBTest.removeStudentByName">
+  <component name="RunManager" selected="JUnit.BasicStudentDBTest.addStudent">
     <configuration name="BasicStudentDBTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="NF_W1_D2" />
       <extension name="coverage">
@@ -86,6 +77,22 @@
       <option name="PACKAGE_NAME" value="jst.student" />
       <option name="MAIN_CLASS_NAME" value="jst.student.BasicStudentDBTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BasicStudentDBTest.addStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="NF_W1_D2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jst.student.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="jst.student" />
+      <option name="MAIN_CLASS_NAME" value="jst.student.BasicStudentDBTest" />
+      <option name="METHOD_NAME" value="addStudent" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -138,29 +145,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ComputerScienceStudentTest.testToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="NF_W1_D2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="jst.student.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="jst.student" />
-      <option name="MAIN_CLASS_NAME" value="jst.student.ComputerScienceStudentTest" />
-      <option name="METHOD_NAME" value="testToString" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BasicStudentDBTest.addStudent" />
         <item itemvalue="JUnit.BasicStudentDBTest.removeStudentByName" />
-        <item itemvalue="JUnit.BasicStudentDBTest.getAllStudents" />
         <item itemvalue="JUnit.BasicStudentDBTest.testToString" />
+        <item itemvalue="JUnit.BasicStudentDBTest.getAllStudents" />
         <item itemvalue="JUnit.BasicStudentDBTest" />
-        <item itemvalue="JUnit.ComputerScienceStudentTest.testToString" />
       </list>
     </recent_temporary>
   </component>
@@ -176,7 +167,7 @@
       <workItem from="1648537604597" duration="2078000" />
       <workItem from="1648540744707" duration="82000" />
       <workItem from="1648540830385" duration="16905000" />
-      <workItem from="1648628488034" duration="9505000" />
+      <workItem from="1648628488034" duration="12756000" />
     </task>
     <servers />
   </component>
@@ -208,11 +199,6 @@
           <properties class="java.util.ConcurrentModificationException" package="java.util" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/jst/student/StudentDB.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
