@@ -1,36 +1,50 @@
 package jst.student;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class StudentDB {
-    Student[] students;
+    ArrayList<Student> students;
 
-    public StudentDB(Student[] students) {
+    public StudentDB(ArrayList<Student> students) {
         this.students = students;
     }
 
-    public Student[] getAllStudents() {
+    public ArrayList<Student> getAllStudents() {
         return students;
     }
 
     public Student randomStudent() {
-        int index = (int) ((double) students.length * Math.random());
-        return students[index];
+        int index = (int) ((double) students.size() * Math.random());
+        return students.get(index);
     }
 
     public void addStudent(Student newStudent) {
-        students = Arrays.copyOf(students, students.length + 1);
-        students[students.length - 1] = newStudent;
+        students.add(newStudent);
     }
 
-    public Student[] getStudents() {
+    public void removeStudentByName (String name) {
+        boolean treffer = false;
+        int index = -1;
+        for (int i = 0; i<= students.size() - 1; i++) {
+            if (students.get(i).getName().equals(name)) {
+                index = i;
+                treffer = true;
+            }
+        }
+        if (treffer && index != -1) {
+            students.remove(index);
+        }
+    }
+
+    public ArrayList<Student> getStudents() {
         return students;
     }
 
     @Override
     public String toString() {
         return "StudentDB{" +
-                "students=" + Arrays.toString(students) +
+                "students=" + students +
                 '}';
     }
 }

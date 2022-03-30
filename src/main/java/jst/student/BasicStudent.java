@@ -2,23 +2,23 @@ package jst.student;
 
 import java.util.Objects;
 
-public abstract class Student {
-    protected String name;
-    protected int ID;
+public class BasicStudent extends Student{
 
-    public Student(String name, int ID) {
-        this.name = name;
-        this.ID = ID;
+    public BasicStudent(String name, int ID) {
+        super(name,ID);
     }
 
-    public abstract String getName();
+    public String getName() {
+        return name;
+    }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public abstract int getID();
-
+    public int getID() {
+        return ID;
+    }
 
     public void setID(int ID) {
         this.ID = ID;
@@ -28,7 +28,7 @@ public abstract class Student {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Student student = (Student) o;
+        BasicStudent student = (BasicStudent) o;
         return ID == student.ID && Objects.equals(name, student.name);
     }
 
