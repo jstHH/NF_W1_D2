@@ -2,6 +2,7 @@ package jst.student;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.NoSuchElementException;
 
 public class StudentDB {
     ArrayList<Student> students;
@@ -36,6 +37,16 @@ public class StudentDB {
             students.remove(index);
         }
     }
+
+    public Student findByID (int id) throws NoSuchElementException {
+        for (Student student : students) {
+            if (student.getID() == id) {
+                return student;
+            }
+        }
+        throw new NoSuchElementException("ID nicht gefunden");
+    }
+
 
     public ArrayList<Student> getStudents() {
         return students;
